@@ -106,14 +106,12 @@ window.ROOSTER = {
     },
     woensdag: {
       Isabelle: [
-        { waar: "In W305" }
+        { van: "10:00", tot: "15:00", waar: "In W305" }
       ],
       Thomas: []
     },
     donderdag: {
-      Isabelle: [
-        { waar: "In W305" }
-      ],
+      Isabelle: [],
       Thomas: [
         { van: "10:00", tot: "15:00", waar: "In W303" }
       ]
