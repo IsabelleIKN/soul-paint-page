@@ -1,6 +1,6 @@
 # Soul Paint · Pilot
 
-Informatiepagina voor studenten die meedoen aan de Soul Paint VR-pilot (26 oktober t/m 27 november 2026).
+Informatiepagina voor studenten die meedoen aan de Soul Paint VR-pilot (26 oktober t/m 4 december 2026).
 
 ## Rooster aanpassen
 

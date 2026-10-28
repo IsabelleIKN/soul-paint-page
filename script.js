@@ -55,6 +55,17 @@
     }
     tr.appendChild(td);
 
+    // Een notitie (bijv. studiedag) vervangt de kolommen van die dag
+    if (week[dag] && week[dag].notitie) {
+      var notitie = document.createElement('td');
+      notitie.colSpan = MENSEN.length;
+      notitie.className = 'dagnotitie';
+      notitie.textContent = week[dag].notitie;
+      tr.appendChild(notitie);
+      tbody.appendChild(tr);
+      return;
+    }
+
     MENSEN.forEach(function (persoon) {
       var cel = document.createElement('td');
       var blokken = (week[dag] && week[dag][persoon]) || [];
@@ -64,10 +75,14 @@
       blokken.forEach(function (b) {
         var slot = document.createElement('span');
         slot.className = 'slot';
-        slot.textContent = b.van + '–' + b.tot;
-        var waar = document.createElement('span');
-        waar.textContent = b.waar;
-        slot.appendChild(waar);
+        if (b.van) {
+          slot.textContent = b.van + '–' + b.tot;
+          var waar = document.createElement('span');
+          waar.textContent = b.waar;
+          slot.appendChild(waar);
+        } else {
+          slot.textContent = b.waar;
+        }
         cel.appendChild(slot);
       });
       tr.appendChild(cel);
