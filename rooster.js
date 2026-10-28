@@ -25,8 +25,7 @@ var VANAF_9_NOV = {
     Isabelle: [],
     Thomas: [
       { van: "09:00", tot: "11:45", waar: "Les in W305" },
-      { van: "13:15", tot: "16:00", waar: "Les in W305" },
-      { van: "16:00", tot: "17:30", waar: "SLB-gesprekken" }
+      { van: "13:15", tot: "16:00", waar: "Les in W305" }
     ]
   },
   woensdag: {
@@ -61,7 +60,6 @@ window.ROOSTER = {
       ],
       Thomas: [
         { van: "09:30", tot: "12:45", waar: "Les in W303" },
-        { van: "13:15", tot: "14:45", waar: "SLB-gesprekken" },
         { van: "15:00", tot: "16:30", waar: "Teamoverleg" }
       ]
     },
