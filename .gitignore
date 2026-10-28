@@ -1,0 +1,4 @@
+# Bronmateriaal (bevat o.a. een privé-mail) niet publiceren
+Informatie/
+.DS_Store
+.claude/
