@@ -71,7 +71,15 @@
       <p><b>Thomas Tijs</b><a href="mailto:ttijs@glu.nl">ttijs@glu.nl</a></p>
       <p><b>Kantoor</b>W201 · Docentenkamer</p>
     </div>
-    <h3 class="week" id="rooster-week"></h3>
+    <div class="weeknav">
+      <div class="weeknav__titel">
+        <h3 class="week" id="rooster-week" aria-live="polite"></h3>
+        <span class="weeknav__nu" id="week-label"></span>
+        <button type="button" class="weeknav__terug" id="week-terug" hidden>Terug naar deze week</button>
+      </div>
+      <button type="button" class="weeknav__btn" id="week-vorige" aria-label="Vorige week">‹</button>
+      <button type="button" class="weeknav__btn" id="week-volgende" aria-label="Volgende week">›</button>
+    </div>
     <table class="rooster" id="rooster-tabel">
       <thead><tr><th>Dag</th><th>Isabelle</th><th>Thomas</th></tr></thead>
       <tbody></tbody>

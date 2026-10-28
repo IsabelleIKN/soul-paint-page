@@ -105,7 +105,25 @@ h2 { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight
 .people p { display: flex; flex-direction: column; color: var(--muted); font-size: 15px; }
 .people b { color: var(--text); font-size: 16px; }
 
-.week { margin: 0 0 10px; font-size: 17px; font-weight: 900; }
+.weeknav { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.weeknav__titel { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; row-gap: 2px; }
+.week { margin: 0; font-size: 17px; font-weight: 900; }
+.weeknav__nu { padding: 1px 8px; border-radius: 999px; background: var(--pink); color: var(--night); font-size: 12px; font-weight: 900; }
+.weeknav__nu:empty { display: none; }
+.weeknav__terug {
+  all: unset; cursor: pointer; font-size: 14px; color: var(--link);
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.weeknav__terug[hidden] { display: none; }
+.weeknav__btn {
+  flex: none; width: 44px; height: 44px; border-radius: 50%;
+  border: 1.5px solid var(--border); background: var(--surface); color: var(--text);
+  font: 900 22px/1 "Lato", system-ui, sans-serif; cursor: pointer;
+  display: grid; place-items: center; padding-bottom: 3px;
+}
+.weeknav__btn:hover:not(:disabled) { border-color: var(--link); color: var(--link); }
+.weeknav__btn:disabled { opacity: .35; cursor: default; }
+.weeknav__btn:focus-visible, .weeknav__terug:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
 .rooster { width: 100%; border-collapse: collapse; font-size: 15px; }
 .rooster[hidden] { display: none; }
 .rooster th {
