@@ -114,7 +114,9 @@ window.ROOSTER = {
       Isabelle: [
         { waar: "In W305" }
       ],
-      Thomas: []
+      Thomas: [
+        { van: "10:00", tot: "15:00", waar: "In W303" }
+      ]
     },
     vrijdag: { notitie: "Studenten zijn vrij. Isabelle is in de teamkamer." }
   },
