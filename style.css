@@ -166,3 +166,8 @@ h2 { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight
 .steps li.important::before { background: var(--pink); border-color: var(--pink); color: var(--night); }
 
 .rooster .dagnotitie { color: var(--muted); }
+
+.block--info {
+  background: color-mix(in srgb, var(--yellow) 18%, var(--surface));
+  border: 2px solid var(--yellow);
+}
