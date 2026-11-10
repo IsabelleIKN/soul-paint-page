@@ -44,10 +44,29 @@ var VANAF_9_NOV = {
     ]
   },
   vrijdag: {
-    Isabelle: [],
+    Isabelle: [
+      { waar: "Aanwezig, geen les" }
+    ],
     Thomas: []
   }
 };
+
+// Vaste rooster, maar maandag feedback met Monobanda (16 en 30 november)
+var MET_FEEDBACK = Object.assign({}, VANAF_9_NOV, {
+  maandag: {
+    Isabelle: [
+      { van: "10:45", tot: "13:30", waar: "Les in W303" },
+      { van: "13:30", tot: "14:30", waar: "Feedback Monobanda in W406" },
+      { van: "15:00", tot: "16:30", waar: "Teamoverleg" }
+    ],
+    Thomas: [
+      { van: "09:00", tot: "10:00", waar: "Les in W201" },
+      { van: "10:45", tot: "12:45", waar: "Les in W305" },
+      { van: "13:15", tot: "14:30", waar: "Les en feedback Monobanda in W406" },
+      { van: "15:00", tot: "16:30", waar: "Teamoverleg" }
+    ]
+  }
+});
 
 window.ROOSTER = {
 
@@ -117,10 +136,10 @@ window.ROOSTER = {
     vrijdag: { notitie: "Studenten zijn vrij. Isabelle is in de teamkamer." }
   },
 
-  // Week 3 t/m 6: vaste rooster. Wijkt een week af? Vervang VANAF_9_NOV door een eigen blok.
+  // Week 3 t/m 6: vaste rooster, in week 4 en 6 met feedback op maandag. Wijkt een week af? Vervang VANAF_9_NOV door een eigen blok.
   "2026-11-09": VANAF_9_NOV,
-  "2026-11-16": VANAF_9_NOV,
+  "2026-11-16": MET_FEEDBACK,
   "2026-11-23": VANAF_9_NOV,
-  "2026-11-30": VANAF_9_NOV
+  "2026-11-30": MET_FEEDBACK
 
 };

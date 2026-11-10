@@ -157,6 +157,14 @@ h2 { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight
   border-left: 4px solid var(--yellow);
 }
 
+.datums { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+@media (min-width: 600px) { .datums { grid-template-columns: 1fr 1fr; } }
+.datums li {
+  display: flex; flex-direction: column; padding: 12px 14px; border-radius: 12px;
+  border: 1.5px solid var(--border); border-left: 4px solid var(--cyan);
+}
+.datums span { color: var(--muted); font-size: 15px; }
+
 .cred {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .92em; font-weight: 700;
   padding: 1px 6px; border-radius: 6px; white-space: nowrap;
